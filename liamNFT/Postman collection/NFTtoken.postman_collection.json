@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "14508b56-dc95-40cf-9ab0-fc2a0b629c61",
+		"name": "NFTtoken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addMileStone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"from\": 0,\n    \"to\": 500,\n    \"greenTokenUri\": \"green.json\",\n    \"blueTokenUri\": \"blue.json\",\n    \"purpleTokenUri\": \"purple.json\",\n    \"milestone\":\"CAT Playing \"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/addMileStone",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"addMileStone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllMilestone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/getAllMilestone",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"getAllMilestone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMilestoneIDforSelection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/getMilestoneIDforSelection",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"getMilestoneIDforSelection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SelectMilestone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/selectmilestone/8ce34a69849249c7807614b69de3a1d0",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"selectmilestone",
+						"8ce34a69849249c7807614b69de3a1d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTransactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/sendTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"sendTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllNFTartworks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/NFTartworks",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"NFTartworks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NextMilestone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/NextMilestone",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"NextMilestone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSwapnNoforToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/getSwapnNoforToken",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"getSwapnNoforToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveMilestone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/RemoveMilestone",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"RemoveMilestone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
